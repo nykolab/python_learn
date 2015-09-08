@@ -1,13 +1,13 @@
-x_range = 11
-y_range = 11
+in_list = [[[ [1, 4, 5], [[6, 9],[[[8, 1], 7], 3], 2], 7], 5, 2], 9, [1, 2]]
+summa = 0
 
-
-for x in xrange(1, x_range):
-    print ("   {:^3d}".format(x)),
-print 
-print ("-" * x_range*7)
-
-for x in xrange(1, x_range):
-    for y in xrange(1, y_range):
-        print ("   {0:^3d}".format(x*y)),
-    print "\n"
+def decompose(elem):
+    global summa
+    if isinstance(elem, list):
+        for i in elem:
+            decompose(i)
+    else:
+        summa = summa + int(elem)
+        
+decompose(in_list)
+print "Sum of the elements in the list is {:<4d}".format(summa)
