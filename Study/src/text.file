@@ -1,13 +1,16 @@
-DevOps (short for development and operations), like
-most new approaches, is only a buzzword for many
-people. Everyone talks about it, but not everyone knows what
-it is. In broad terms, DevOps is an approach based on lean and
-agile principles in which business owners and the development,
-operations, and quality assurance departments collaborate
-to deliver software in a continuous manner that enables
-the business to more quickly seize market opportunities and
-reduce the time to include customer feedback. Indeed, enterprise
-applications are so diverse and composed of multiple
-technologies, databases, end-user devices, and so on, that
-only a DevOps approach will be successful when dealing with
-these complexities. Opinions differ on how to use it, however.
+<html>
+<head>
+        <meta http-equiv="content-type" content="text/html" /> 
+        <title>Some nice page</title>
+        <link href="/styles/1399910061/printer.css" rel="stylesheet" /> 
+</head>
+<body>
+<div name="main"><img path='/img.gif'><b>My nice page</b><div> It's so cool! <br> Coolest in the world! <br/>
+    <p>Lorem impsum dolorem</p>
+    <script src='js.js'>var g="Hello World!";</script>
+    <table><thead><TR><td>Date</Td><td>Name</td></tr>
+    <tbody>
+        <tr><td>10/12/2003</td><td></td></tr>
+        <tr><td>10/12/2003</td><td></td></tr>
+    </tdbodY></table>
+</body></html>
