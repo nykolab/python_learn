@@ -11,23 +11,21 @@ from HTMLParser import HTMLParser
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 NAME = "text.file"
 FILE = BASE_DIR+"//"+NAME
-data_tags = ["title","b","br", "div", "tr","th"]
+data_tags = ["title","b","br","div","tr"]
+
 class MyHTMLParser(HTMLParser):
     def __init__(self):
         self.record = False
         self.reset()
     def handle_starttag(self, tag, attrs):
-        if tag.lower() in data_tags and not attrs:
+        if tag in data_tags and not attrs=="src":
             self.record = True
     def handle_data(self, data):
         if self.record == True: 
-            print data
-            
+                if not data.isspace():
+                    print data            
 
-        
 with open(FILE) as f:
     p = MyHTMLParser()
     html = f.read()
     p.feed(html)
-    
-
